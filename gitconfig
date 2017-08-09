@@ -1,0 +1,61 @@
+[user]
+	name = creasetoph
+	email = chris.albert@ticketfly.com
+[push]
+	default = current
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustexitcode = true
+[merge]
+  tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[mergetool]
+  prompt = false
+[diff]
+  tool = Kaleidoscope
+[alias]
+  co = checkout
+  ci = commit
+  s = status
+  br = branch
+  f = fetch
+  pl = pull
+  ps = push
+  hist = log --pretty=format:\"%h %ad (%ar)| %s%d [%an]\" -n 30 --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  # List all branches
+  ba = branch -a
+  # List local branches
+  bl = show-branch --list
+  # List Remote branches
+  br = show-branch --list -r
+  # List branches and what they track 
+  bt = branch -vv
+  # Rebase origin master
+  rom = rebase origin/master
+  # Commit with message all modified files  
+  cam = commit -a -m
+  # Files commited in ref
+  fc = diff-tree --no-commit-id --name-only -r
+  # Diff of files from current branch to origin/master
+  dm = diff ..origin/master --name-status
+  # Create new branch
+  nb = checkout -b
+  # open diff tool
+  d = difftool
+  # unstage
+  unstage = reset HEAD --
+  # last 
+  last = log -1 HEAD
+  # Fetch, chechout master, pull, status
+  fmp = !git f && git co master && git pull && git status
+  # Create new branch from origin master (New Branch Fresh)
+  nbf = !git fmp && git nb
+  # Amend all
+  am = !git add . && git ci --amend
+
+
