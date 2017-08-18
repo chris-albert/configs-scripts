@@ -7,8 +7,8 @@ Here is a place i have my mac scripts and configs.
 I would imagine that you can just link to these files so that i can keep them backed up in git.
 
 Mac Programs:
-* Alfred
-* Moom
+* Alfred - Cmd + Space
+* Moom - Shift + Ctrl + Enter
 * Docker
 * Dropbox
 * 1password
@@ -30,7 +30,7 @@ add alfred scripts here
 alfred is backed up in dropbox
 
 * b -> chrome bookmarks
-* gh -> gh autocomplete
+* gh -> git hub autocomplete
 * j -> jenkins jobs autocomplete
 * p -> open iterm to project
 * hotkey cmd + shift + d -> scala test diff with kalidescope
