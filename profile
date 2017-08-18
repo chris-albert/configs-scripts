@@ -43,7 +43,12 @@ function pskill() {
 
 function sp() {
   source ~/.profile
-}
+} 
+
+if [ -f credentials ]; then
+    echo "Found credential file, loading now..."
+    source credentials
+fi
 
 export NVM_DIR="/Users/chrisalbert/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
