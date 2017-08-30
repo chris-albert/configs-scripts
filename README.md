@@ -5,7 +5,7 @@ Here is a place i have my mac scripts and configs.
 * IntelliJ settings
     - ./intellij_settings.jar
 * git configs
-    - Run `ln -s ~/git/configs-scripts/gitconfig ~/.gitconfig` 
+    - Run `ln -s ~/git/configs-scripts/gitconfig ~/.gitconfig`
 
 I would imagine that you can just link to these files so that i can keep them backed up in git.
 
@@ -24,7 +24,6 @@ Mac Programs:
 * sbt
 * Kalidescope
 * Atom
-* Sublime
 * Little Snitch
 * MySql Workbench
 * Tower
