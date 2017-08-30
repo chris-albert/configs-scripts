@@ -1,10 +1,11 @@
 Here is a place i have my mac scripts and configs.
 
 * bash functions
-    - ./profile
+    - Add `source ~/git/configs-scripts/profile` to your `~/.profile` to load this profile
 * IntelliJ settings
     - ./intellij_settings.jar
-* git configs and git autocomplete
+* git configs
+    - Run `ln -s ~/git/configs-scripts/gitconfig ~/.gitconfig` 
 
 I would imagine that you can just link to these files so that i can keep them backed up in git.
 

@@ -1,22 +1,20 @@
 #!/bin/bash
-
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo "Loading profile from "$DIR
 export PS1="\[$(tput setaf 2)\]┌─\[$(tput setaf 1)\]\u\[$(tput setaf 3)\]@\[$(tput setaf 4)\]\h\[$(tput setaf 5)\]:\w\[$(tput setaf 3)\] #\! \[$(tput setaf 6)\][\t]\n\[$(tput setaf 2)\]└>\[$(tput sgr0)\]";
 export PS2='-->'
 export JAVA_OPTS="-Xmx3g -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled"
-
-ulimit -n 65536 65536
 
 alias d='docker'
 alias c='docker-compose'
 alias ls='ls -G'
 alias chrome='open -a Google\ Chrome'
 alias weather='curl http://wttr.in/san_francisco'
-alias activator=/Users/chrisalbert/opt/activator-1.3.5-minimal/activator
 alias mysql.server=/usr/local/mysql/support-files/mysql.server
 alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
 alias pp='python -mjson.tool'
 
-source ./git-complete.bash
+source $DIR/git-complete.bash
 
 function java_use() {
   export JAVA_HOME=$(/usr/libexec/java_home -v $1)
@@ -43,12 +41,12 @@ function pskill() {
 
 function sp() {
   source ~/.profile
-} 
+}
 
 if [ -f credentials ]; then
     echo "Found credential file, loading now..."
     source credentials
 fi
 
-export NVM_DIR="/Users/chrisalbert/.nvm"
+export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
