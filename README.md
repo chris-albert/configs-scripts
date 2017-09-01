@@ -20,7 +20,7 @@ Mac Programs:
 * Divvy
 * git
 * IntelliJ
-* nvm
+* nvm `brew install nvm` cloning from git doesn't work on Mac
 * sbt
 * Kalidescope
 * Atom

@@ -1,8 +1,6 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Loading profile from "$DIR
-export PS1="\[$(tput setaf 2)\]┌─\[$(tput setaf 1)\]\u\[$(tput setaf 3)\]@\[$(tput setaf 4)\]\h\[$(tput setaf 5)\]:\w\[$(tput setaf 3)\] #\! \[$(tput setaf 6)\][\t]\n\[$(tput setaf 2)\]└>\[$(tput sgr0)\]";
-export PS2='-->'
 export JAVA_OPTS="-Xmx3g -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled"
 
 alias d='docker'
@@ -48,5 +46,13 @@ if [ -f credentials ]; then
     source credentials
 fi
 
-export NVM_DIR="~/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+    GIT_PROMPT_THEME=Default
+    GIT_PROMPT_ONLY_IN_REPO=0 # Use the default prompt when not in a git repo.
+    GIT_PROMPT_FETCH_REMOTE_STATUS=0 # Avoid fetching remote status
+    GIT_PROMPT_SHOW_UPSTREAM=0 # Don't display upstream tracking branch
+    GIT_SHOW_UNTRACKED_FILES=no # Don't count untracked files (no, normal, all)
+    GIT_PROMPT_START="\[$(tput setaf 1)\]\u\[$(tput setaf 3)\]@\[$(tput setaf 4)\]\h\[$(tput setaf 5)\]:\w\[$(tput setaf 3)\] #\! \[$(tput setaf 6)\][\t]\[$(tput sgr0)\]"
+    GIT_PROMPT_END="\n$ "
+    source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+fi
