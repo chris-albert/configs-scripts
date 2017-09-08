@@ -6,6 +6,7 @@ Here is a place i have my mac scripts and configs.
     - ./intellij_settings.jar
 * git configs
     - Run `ln -s ~/git/configs-scripts/gitconfig ~/.gitconfig`
+    - Add bash git status https://github.com/magicmonty/bash-git-prompt
 
 I would imagine that you can just link to these files so that i can keep them backed up in git.
 
