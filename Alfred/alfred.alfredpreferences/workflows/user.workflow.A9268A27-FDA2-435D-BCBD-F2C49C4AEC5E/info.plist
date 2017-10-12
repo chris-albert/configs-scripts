@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>0F5D82E4-78D8-4BD5-BBE4-80D3F60CEC4B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>097D09E9-5FA1-4916-988F-515E05A4DD9C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string>Pastes the service cmd for you</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Service</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>sv</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Generate sv command</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0F5D82E4-78D8-4BD5-BBE4-80D3F60CEC4B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>sudo sv {query} $SCALR_FARM_ROLE_ALIAS
+</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>097D09E9-5FA1-4916-988F-515E05A4DD9C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>097D09E9-5FA1-4916-988F-515E05A4DD9C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+		<key>0F5D82E4-78D8-4BD5-BBE4-80D3F60CEC4B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>140</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

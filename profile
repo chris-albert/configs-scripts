@@ -4,15 +4,16 @@ echo "Loading profile from "$DIR
 export JAVA_OPTS="-Xmx3g -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled"
 
 alias d='docker'
-alias c='docker-compose'
-alias ls='ls -G'
+alias g='git'
+alias dc='docker-compose'
+alias ls='ls -Gla'
 alias chrome='open -a Google\ Chrome'
-alias weather='curl http://wttr.in/san_francisco'
-alias mysql.server=/usr/local/mysql/support-files/mysql.server
+alias weather='curl http://wttr.in/'
 alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
 alias pp='python -mjson.tool'
 
 source $DIR/git-complete.bash
+source $DIR/sshd_complete.sh
 
 function java_use() {
   export JAVA_HOME=$(/usr/libexec/java_home -v $1)

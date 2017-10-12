@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="user-workflow-c0e54841-ed61-4469-82a3-575f3c4fb5b0_2.12"
+		revision="0.1-SNAPSHOT"
+		conf="provided"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20170918163710"/>
+	<dependencies>
+	</dependencies>
+</ivy-report>
