@@ -17,8 +17,7 @@ Mac Programs:
 * Dropbox
 * 1password
 * Shimo
-* ITerm2
-* Divvy
+* ITerm2  
 * git
 * IntelliJ
 * nvm `brew install nvm` cloning from git doesn't work on Mac
