@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 6,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#FFFFFFAF",
+        "font" : "Helvetica Neue Light",
+        "color" : "#979B867F"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#62C03BFF",
+        "font" : "Helvetica Neue Light",
+        "color" : "#FFFFFFA3"
+      },
+      "backgroundSelected" : "#38362FFF",
+      "text" : {
+        "size" : 20,
+        "colorSelected" : "#569718FF",
+        "font" : "Helvetica Neue Light",
+        "color" : "#569718AA"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 6,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#38362F00",
+      "spacing" : 10,
+      "text" : {
+        "size" : 36,
+        "colorSelected" : "#000000FF",
+        "font" : "Helvetica Neue Light",
+        "color" : "#569718FF"
+      },
+      "backgroundSelected" : "#B2D7FFFF"
+    },
+    "window" : {
+      "color" : "#303030FF",
+      "paddingHorizontal" : 10,
+      "width" : 560,
+      "borderPadding" : 10,
+      "borderColor" : "#569718AF",
+      "blur" : 0,
+      "roundness" : 3,
+      "paddingVertical" : 10
+    },
+    "credit" : "Clifford Fajardo",
+    "separator" : {
+      "color" : "#00000000",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#88C75F6B",
+      "thickness" : 2
+    },
+    "name" : "NodeJs (v2)"
+  }
+}

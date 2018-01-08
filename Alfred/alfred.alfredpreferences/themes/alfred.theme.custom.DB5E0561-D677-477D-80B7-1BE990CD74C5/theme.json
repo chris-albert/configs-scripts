@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 6,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#ACADA6FF",
+        "font" : "Courier",
+        "color" : "#8A8982FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#D1CFC7FF",
+        "font" : "Lucida Grande",
+        "color" : "#A6A59EFF"
+      },
+      "backgroundSelected" : "#565450FF",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#D1CFC6FF",
+        "font" : "Lucida Grande",
+        "color" : "#B0AEA6FF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 6,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#494843FF",
+      "spacing" : 10,
+      "text" : {
+        "size" : 32,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Lucida Grande",
+        "color" : "#ADAA9FFF"
+      },
+      "backgroundSelected" : "#667A8CFF"
+    },
+    "window" : {
+      "color" : "#66635EFF",
+      "paddingHorizontal" : 10,
+      "width" : 620,
+      "borderPadding" : 10,
+      "borderColor" : "#D6D6D600",
+      "blur" : 0,
+      "roundness" : 12,
+      "paddingVertical" : 10
+    },
+    "credit" : "Caleb Grove (@sircalebgrove)",
+    "separator" : {
+      "color" : "#706F6BFF",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#AAAAAA00",
+      "thickness" : 2
+    },
+    "name" : "Vintage OD (v2)"
+  }
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>26F225F8-5EC2-4C04-AFDD-2CA148B9514B</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gogit</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Tfly Github Go</string>
+			<key>url</key>
+			<string>https://github.com/Ticketfly/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>3297958D-E09D-473A-8218-24E460393992</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>jira</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Tfly Jira</string>
+			<key>url</key>
+			<string>https://ticketfly.jira.com/secure/Dashboard.jspa</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>612E343C-5AB0-4033-910B-057146A0181D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>tgit</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Tfly Github Search</string>
+			<key>url</key>
+			<string>https://github.com/Ticketfly?utf8=%E2%9C%93&amp;query={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>755D434D-7BD2-4B63-9E8E-5850C41896B1</key>
+		<dict>
+			<key>enabled</key>
+			<false/>
+			<key>keyword</key>
+			<string>git</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>GIthub</string>
+			<key>url</key>
+			<string>https://github.com/Ticketfly?utf8=%E2%9C%93&amp;query={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>E38C9768-0EDC-4A69-9385-52D780C9DDFB</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>twiki</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Ticketfly Wiki</string>
+			<key>url</key>
+			<string>https://ticketfly.jira.com/wiki/dosearchsite.action?queryString={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

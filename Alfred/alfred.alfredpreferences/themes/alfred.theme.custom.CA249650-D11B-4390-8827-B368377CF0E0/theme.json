@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 4,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#999999FF",
+        "font" : "Helvetica Neue",
+        "color" : "#506D84FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#230C35FF",
+        "font" : "Helvetica Neue",
+        "color" : "#566780D1"
+      },
+      "backgroundSelected" : "#2B2B2BDB",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#F3F3F3FF",
+        "font" : "Helvetica Neue",
+        "color" : "#B9B9B9FF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 2,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#29292BF2",
+      "spacing" : 10,
+      "text" : {
+        "size" : 36,
+        "colorSelected" : "#000000FF",
+        "font" : "Helvetica Neue",
+        "color" : "#FFFFFFFF"
+      },
+      "backgroundSelected" : "#14A6DCFF"
+    },
+    "window" : {
+      "color" : "#31313175",
+      "paddingHorizontal" : 10,
+      "width" : 620,
+      "borderPadding" : 10,
+      "borderColor" : "#D2D2D200",
+      "blur" : 0,
+      "roundness" : 12,
+      "paddingVertical" : 10
+    },
+    "credit" : "Malik Trey",
+    "separator" : {
+      "color" : "#333333FF",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#32313600",
+      "thickness" : 2
+    },
+    "name" : "Darkflow (v2)"
+  }
+}

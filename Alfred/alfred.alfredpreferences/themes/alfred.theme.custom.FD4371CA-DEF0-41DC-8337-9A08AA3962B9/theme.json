@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#55FA4CFF",
+        "font" : "Lucida Grande",
+        "color" : "#FFFFFF3D"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#AAAAAAFF",
+        "font" : "Lucida Grande",
+        "color" : "#FFFFFFFF"
+      },
+      "backgroundSelected" : "#0A0A0ACC",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#C2C2C2FF",
+        "font" : "Lucida Grande",
+        "color" : "#9B9B9BFF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 8,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#56555700",
+      "spacing" : 10,
+      "text" : {
+        "size" : 36,
+        "colorSelected" : "#000000FF",
+        "font" : "Helvetica",
+        "color" : "#FFFFFFFF"
+      },
+      "backgroundSelected" : "#B2D7FFFF"
+    },
+    "window" : {
+      "color" : "#191D2EE8",
+      "paddingHorizontal" : 10,
+      "width" : 560,
+      "borderPadding" : 10,
+      "borderColor" : "#19191900",
+      "blur" : 0,
+      "roundness" : 12,
+      "paddingVertical" : 10
+    },
+    "credit" : "AleXander",
+    "separator" : {
+      "color" : "#FFFFFF00",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#00FA00FF",
+      "thickness" : 2
+    },
+    "name" : "Terminal by Design (v2)"
+  }
+}
