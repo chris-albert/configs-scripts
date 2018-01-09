@@ -6,7 +6,7 @@ export JAVA_OPTS="-Xmx3g -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled"
 alias d='docker'
 alias g='git'
 alias dc='docker-compose'
-alias ls='ls -Gla'
+alias ls='ls -Glah'
 alias chrome='open -a Google\ Chrome'
 alias weather='curl http://wttr.in/'
 alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
@@ -19,6 +19,12 @@ function java_use() {
   export JAVA_HOME=$(/usr/libexec/java_home -v $1)
   export PATH=$JAVA_HOME/bin:$PATH
   java -version
+}
+
+function cleanDocker() {
+  docker volume rm $(docker volume ls -qf dangling=true)
+  docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+  docker rm $(docker ps -q -f 'status=exited')
 }
 
 function tabname {

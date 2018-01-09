@@ -1,5 +1,6 @@
 function sshd {
-  docker exec -it $1 bash
+  shell=${2:-bash}
+  docker exec -it $1 $shell
 }
 
 _sshd_complete()
