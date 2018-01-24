@@ -32,6 +32,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D4641A9D-563C-407B-9292-391FC6C8FE53</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DF21F462-5701-4F9C-AA8A-E0A1474CC45D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F6E1A1AD-6814-4712-ACEB-9F1F6DC15B47</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D4641A9D-563C-407B-9292-391FC6C8FE53</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string></string>
@@ -57,6 +83,37 @@
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>C204DBB1-FCBF-463B-AD33-AC18DA4218CD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>27</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>-</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>CE967075-9782-4AF0-A146-13609CEC9798</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -90,6 +147,50 @@ escaped=`echo "$query" | sed 's/"/\"/g'`
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>DF21F462-5701-4F9C-AA8A-E0A1474CC45D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+escaped=`echo "$query" | sed 's/"/\"/g'`
+
+/usr/local/bin/node index.js '=' "$escaped"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D4641A9D-563C-407B-9292-391FC6C8FE53</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -99,11 +200,11 @@ escaped=`echo "$query" | sed 's/"/\"/g'`
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>24</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>A</string>
+				<string>=</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -114,7 +215,7 @@ escaped=`echo "$query" | sed 's/"/\"/g'`
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>CE967075-9782-4AF0-A146-13609CEC9798</string>
+			<string>F6E1A1AD-6814-4712-ACEB-9F1F6DC15B47</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -143,6 +244,27 @@ escaped=`echo "$query" | sed 's/"/\"/g'`
 			<integer>170</integer>
 			<key>ypos</key>
 			<integer>170</integer>
+		</dict>
+		<key>D4641A9D-563C-407B-9292-391FC6C8FE53</key>
+		<dict>
+			<key>xpos</key>
+			<integer>380</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>DF21F462-5701-4F9C-AA8A-E0A1474CC45D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>630</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>F6E1A1AD-6814-4712-ACEB-9F1F6DC15B47</key>
+		<dict>
+			<key>xpos</key>
+			<integer>170</integer>
+			<key>ypos</key>
+			<integer>360</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

@@ -2,7 +2,7 @@ const fsp = require('fs-promise');
 const _   = require('lodash');
 
 const directoriesToRead = [
-  '/Users/creasetoph/git'
+  '/Users/chris.albert/git'
 ];
 
 const dirContents = _.map(directoriesToRead,dir => {

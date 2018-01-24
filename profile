@@ -21,10 +21,15 @@ function java_use() {
   java -version
 }
 
-function cleanDocker() {
+function dockerClean() {
   docker volume rm $(docker volume ls -qf dangling=true)
   docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
   docker rm $(docker ps -q -f 'status=exited')
+}
+
+function dockerWipe() {
+  docker rm $(docker ps -a -q)
+  docker rmi $(docker images -q)
 }
 
 function tabname {
