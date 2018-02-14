@@ -22,21 +22,19 @@ Mac Programs:
 * Alfred - Cmd + Space
 * Moom - Shift + Ctrl + Enter
 * Docker
-* Dropbox
 * 1password
 * git
 * IntelliJ
 * nvm `brew install nvm` cloning from git doesn't work on Mac
-* sbt
+* sbt (scala)
 * Kalidescope
 * Atom
 * Little Snitch
 * MySql Workbench
 * MacVim
+* stack (haskell)
 
-TODO:
-add alfred scripts here
-alfred is backed up in dropbox
+For Alfred, sync your alfred to `this-dir/Alfred`
 
 * b -> chrome bookmarks
 * gh -> git hub autocomplete
