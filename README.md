@@ -6,6 +6,12 @@ Here is a place i have my mac scripts and configs.
     - ./intellij_settings.jar
 * git configs
     - Run `ln -s ~/git/configs-scripts/gitconfig ~/.gitconfig`
+    - Add local config in `~/.gitlocal`
+      ```
+      [user]
+        name = asdf-fdsa
+        email = asdf@gmail.com
+      ```
     - Add bash git status https://github.com/magicmonty/bash-git-prompt
 * vim config
     - Run `ln -s ~/git/configs-scripts/vimrc ~/.vimrc`
