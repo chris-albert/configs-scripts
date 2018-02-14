@@ -66,6 +66,8 @@ Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
 Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
 Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
+" Scala 
+Plug 'derekwyatt/vim-scala'
 
 call plug#end()
 
@@ -92,6 +94,13 @@ let g:airline_theme='kolor'
 let g:airline_section_a = airline#section#create(['mode', 'crypt', ' ', 'paste', 'iminsert'])
 " display buffers like tabs
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#buffer_idx_mode = 0
+
+nmap <silent> <leader>n :bn<CR>
+nmap <silent> <leader>p :bp<CR>
+nmap <silent> <leader>d :bd<CR>
+
 
 " nerd tree config
 "let NERDTreeShowHidden=1

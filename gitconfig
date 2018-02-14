@@ -1,8 +1,7 @@
-[user]
-	name = chris-albert
-	email = creasetoph@gmail.com
+[include]
+  path = ~/.gitlocal
 [push]
-	default = current
+  default = current
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustexitcode = true
