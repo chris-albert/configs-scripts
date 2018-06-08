@@ -1,0 +1,33 @@
+## tmux
+
+https://github.com/gpakosz/.tmux
+
+tmux : start new session
+tmux new -s name : start new session with name
+tmux a -t <name> : attach to session with name
+tmux ls : list sessions
+tmux kill-sesssion -t <name> : kill session with name
+
+Misc
+r : Reloads config
+
+Splits
+- : Splits horizontally
+_ : Splits vertically
+
+## Sessions
+ :new<CR>  new session
+s  list sessions
+$  name session
+
+## Windows
+c : new window
+, : name window
+w : list windows
+f : find window
+& : kill window
+. : move window (prompt)
+
+## Moving
+hjkl : move to pane vim direction
+HJKL : resize pane in vim direction

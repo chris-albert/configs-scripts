@@ -1,3 +1,4 @@
+
 syntax on
 
 set hidden
@@ -8,9 +9,11 @@ set relativenumber
 set cursorline  
 "set cursorcolumn
 
+set cmdheight=1
+
 set shiftwidth=2
 set expandtab
-set tabstop
+set tabstop=8
 
 set incsearch
 set ignorecase
@@ -71,7 +74,8 @@ Plug 'derekwyatt/vim-scala'
 
 call plug#end()
 
-colorscheme atom
+" colorscheme atom
+highlight Error term=reverse ctermfg=3 ctermbg=0
 
 "Syntastic config
 "map <Leader>s :SyntasticToggleMode<CR>
@@ -87,7 +91,7 @@ colorscheme atom
 
 " powerline symbols
 let g:airline_powerline_fonts=1
-let g:airline_theme='kolor'
+let g:airline_theme='deus'
 
 " airline config
 " customize airline section a (remove spell)
@@ -170,3 +174,4 @@ let g:haskell_tabular = 1
 vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
+
