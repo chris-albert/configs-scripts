@@ -74,8 +74,9 @@ Plug 'derekwyatt/vim-scala'
 
 call plug#end()
 
-" colorscheme atom
+colorscheme rupza
 highlight Error term=reverse ctermfg=3 ctermbg=0
+highlight SpellBad ctermbg=0
 
 "Syntastic config
 "map <Leader>s :SyntasticToggleMode<CR>
@@ -153,17 +154,7 @@ call neomake#configure#automake('w')
 " Supertab "
 """"""""""""
 
-let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
-
-if has("gui_running")
-  imap <c-space> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
-else " no gui
-  if has("unix")
-    inoremap <Nul> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
-  endif
-endif
-
-let g:haskellmode_completion_ghc = 1
+let g:haskellmode_completion_ghc = 0
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 """""""""""
@@ -175,3 +166,4 @@ vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
 
+highlight SpellBad ctermbg=0
