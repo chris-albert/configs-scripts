@@ -46683,15 +46683,15 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>1158 470 609 401 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>11 675 796 473 0 0 1920 1178 </string>
+	<string>498 526 796 473 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>278 514 570 427 0 0 1920 1178 </string>
+	<string>153 -1196 956 1196 -811 -1200 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>925 751 570 427 0 0 1920 1178 </string>
+	<string>62 596 570 427 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1375 -1073 1437 996 1111 -1200 1920 1200 </string>
+	<string>961 255 956 1163 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>724 576 570 452 0 0 1680 1028 </string>
+	<string>784 112 970 1195 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>-2560 0 1257 1440 -2560 0 2560 1440 </string>
 	<key>New Bookmarks</key>

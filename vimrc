@@ -20,10 +20,9 @@ set ignorecase
 set smartcase
 set noswapfile
 
-set spell
-
 set encoding=utf-8
-set guifont=Source\ Code\ Pro\ for\ Powerline
+set guifont=Source\ Code\ Pro\ for\ Powerline\ 9
+set backspace=indent,eol,start
 
 :let mapleader = ","
 " Open .vimrc in pane for editing
@@ -55,12 +54,17 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dracula/vim'
 "Fast fuzzy search
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 "project maker
 Plug 'neomake/neomake'
 "Tab completion
 Plug 'ervandew/supertab'
 "Alignment
 Plug 'godlygeek/tabular'
+"YAML
+Plug 'avakhov/vim-yaml'
+"Add closing things
+Plug 'jiangmiao/auto-pairs'
 """""""""""""""""""
 " Haskell Plugins "
 """""""""""""""""""
@@ -71,6 +75,9 @@ Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
 Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 " Scala 
 Plug 'derekwyatt/vim-scala'
+Plug 'ensime/ensime-vim'
+
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 
 call plug#end()
 

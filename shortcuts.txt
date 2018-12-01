@@ -31,3 +31,7 @@ f : find window
 ## Moving
 hjkl : move to pane vim direction
 HJKL : resize pane in vim direction
+
+## Scrolling
+[ : Gets into scroll mode
+q : gets you out of scroll mode
