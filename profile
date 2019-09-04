@@ -58,7 +58,7 @@ if [ -f credentials ]; then
     source credentials
 fi
 
-if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
     GIT_PROMPT_THEME=Default
     GIT_PROMPT_ONLY_IN_REPO=0 # Use the default prompt when not in a git repo.
     GIT_PROMPT_FETCH_REMOTE_STATUS=0 # Avoid fetching remote status
@@ -66,5 +66,5 @@ if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
     GIT_SHOW_UNTRACKED_FILES=no # Don't count untracked files (no, normal, all)
     GIT_PROMPT_START="\[$(tput setaf 1)\]\u\[$(tput setaf 3)\]@\[$(tput setaf 4)\]\h\[$(tput setaf 5)\]:\w\[$(tput setaf 3)\] #\! \[$(tput setaf 6)\][\t]\[$(tput sgr0)\]"
     GIT_PROMPT_END="\n$ "
-    source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+    source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
 fi

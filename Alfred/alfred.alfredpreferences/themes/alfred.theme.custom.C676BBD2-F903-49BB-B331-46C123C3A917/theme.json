@@ -5,34 +5,34 @@
       "subtext" : {
         "size" : 11,
         "colorSelected" : "#FFFFFF96",
-        "font" : "Lucida Grande",
+        "font" : "System",
         "color" : "#FFFFFF3D"
       },
       "shortcut" : {
         "size" : 16,
         "colorSelected" : "#AAAAAAFF",
-        "font" : "Lucida Grande",
+        "font" : "System",
         "color" : "#FFFFFFFF"
       },
       "backgroundSelected" : "#0A0A0ACC",
       "text" : {
-        "size" : 13,
+        "size" : 9,
         "colorSelected" : "#FFFFFFFF",
-        "font" : "Lucida Grande",
-        "color" : "#E7E7E7FF"
+        "font" : "System",
+        "color" : "#76E7DCFF"
       },
       "iconPaddingHorizontal" : 5,
       "paddingVertical" : 0,
-      "iconSize" : 40
+      "iconSize" : 29
     },
     "search" : {
-      "paddingVertical" : 2,
-      "background" : "#56555700",
+      "paddingVertical" : 0,
+      "background" : "#00571900",
       "spacing" : 10,
       "text" : {
-        "size" : 36,
+        "size" : 24,
         "colorSelected" : "#000000FF",
-        "font" : "Helvetica",
+        "font" : "System",
         "color" : "#FFFFFFFF"
       },
       "backgroundSelected" : "#B2D7FFFF"
