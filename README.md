@@ -16,8 +16,8 @@ Here is a place i have my mac scripts and configs.
 * vim config
     - Run `ln -s ~/git/configs-scripts/vimrc ~/.vimrc`
 * tmux config
-    - Run `ln -s ~/git/configs-scripts/.tmux.conf ~/.tmux.conf
-    - Run `ln -s ~/git/configs-scripts/.tmux.conf.local ~/.tmux.conf.local
+    - Run `ln -s ~/git/configs-scripts/.tmux.conf ~/.tmux.conf`
+    - Run `ln -s ~/git/configs-scripts/.tmux.conf.local ~/.tmux.conf.local`
 
 I would imagine that you can just link to these files so that i can keep them backed up in git.
 
