@@ -3,9 +3,9 @@ Here is a place i have my mac scripts and configs.
 * bash functions
     - Add `source ~/git/configs-scripts/profile` to your `~/.profile` to load this profile
 * IntelliJ settings
-    - ./intellij_settings.jar
+    - ./settings.jar
 * git configs
-    - Run `ln -s ~/git/configs-scripts/gitconfig ~/.gitconfig`
+    - `ln -s ~/git/configs-scripts/gitconfig ~/.gitconfig`
     - Add local config in `~/.gitlocal`
       ```
       [user]
@@ -14,10 +14,10 @@ Here is a place i have my mac scripts and configs.
       ```
     - Add bash git status https://github.com/magicmonty/bash-git-prompt
 * vim config
-    - Run `ln -s ~/git/configs-scripts/vimrc ~/.vimrc`
+    - `ln -s ~/git/configs-scripts/vimrc ~/.vimrc`
 * tmux config
-    - Run `ln -s ~/git/configs-scripts/.tmux.conf ~/.tmux.conf`
-    - Run `ln -s ~/git/configs-scripts/.tmux.conf.local ~/.tmux.conf.local`
+    - `ln -s ~/git/configs-scripts/.tmux.conf ~/.tmux.conf`
+    - `ln -s ~/git/configs-scripts/.tmux.conf.local ~/.tmux.conf.local`
 
 I would imagine that you can just link to these files so that i can keep them backed up in git.
 
